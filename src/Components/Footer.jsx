@@ -3,13 +3,11 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP } from 'react-icons/f
 import logo from '../assets/food-sharing-sticker-emblem-feeding-people-giving-food-poor-refugees-food-sharing-sticker-emblem-feeding-people-giving-153612354.webp';
 
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#111111] text-white pt-10 px-4 sm:px-6 md:px-12 lg:px-20">
      
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-        
         <div className="text-left">
           <div className="flex items-center gap-3 mb-2">
             <img className="w-12 h-12 rounded-full" src={logo} alt="ShareMeal logo" />
@@ -36,7 +34,6 @@ const Footer = () => {
           </div>
         </div>
 
-  
         <div className="text-left md:text-center">
           <h3 className="text-xl font-semibold mb-2">Phone & Email</h3>
           <div className="h-[2px] w-24 md:w-32 bg-red-600 mb-3 mx-0 md:mx-auto"></div>
@@ -44,7 +41,6 @@ const Footer = () => {
           <p className="text-sm text-gray-400">contact@sharemeal.org</p>
         </div>
 
-  
         <div className="text-left md:text-right">
           <h3 className="text-xl font-semibold mb-2">Our Address</h3>
           <div className="h-[2px] w-20 md:w-28 bg-red-600 mb-3 ml-0 md:ml-auto"></div>
@@ -52,7 +48,6 @@ const Footer = () => {
           <p className="text-sm text-gray-400">Dhaka 1205, Bangladesh</p>
         </div>
       </div>
-
       <div className="text-center text-gray-500 text-sm mt-12  border-t border-gray-700 pt-4">
         © 2025 ShareMeal. All rights reserved.
       </div>
