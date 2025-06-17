@@ -15,8 +15,6 @@ const SharemealBenifit = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-
-
        <Fade>
          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaRecycle className="text-4xl text-green-600 mb-4" />
@@ -26,9 +24,6 @@ const SharemealBenifit = () => {
           </p>
         </div>
        </Fade>
-
-      
-
 
       <Fade>
           <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition">
@@ -40,10 +35,6 @@ const SharemealBenifit = () => {
         </div>
       </Fade>
 
-
-
-
-        
        <Fade>
          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaLeaf className="text-4xl text-emerald-500 mb-4" />
@@ -54,10 +45,6 @@ const SharemealBenifit = () => {
         </div>
        </Fade>
 
-
-
-
-        
       <Fade>
           <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaUtensils className="text-4xl text-yellow-500 mb-4" />
@@ -67,9 +54,6 @@ const SharemealBenifit = () => {
           </p>
         </div>
       </Fade>
-
-
-
         
        <Fade>
          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition">
@@ -81,7 +65,6 @@ const SharemealBenifit = () => {
         </div>
        </Fade>
 
-       
       </div>
     </div>
     );

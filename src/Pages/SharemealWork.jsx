@@ -6,11 +6,7 @@ import { FaUtensils, FaHandsHelping, FaSmile } from 'react-icons/fa';
 const SharemealWork = () => {
 
 
-
     return (
-
-
-
         <div>
               <div className="py-16 bg-gray-100 px-4 md:px-20">
                  <Slide>
@@ -18,7 +14,6 @@ const SharemealWork = () => {
           </Slide>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-    
         <Fade>
         <div className="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaUtensils className="text-4xl text-green-600 mx-auto mb-4" />
@@ -29,8 +24,6 @@ const SharemealWork = () => {
         </div>
         </Fade>
 
-        
-
         <Fade>
         <div className="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaHandsHelping className="text-4xl text-blue-600 mx-auto mb-4" />
@@ -40,11 +33,7 @@ const SharemealWork = () => {
           </p>
         </div>
         </Fade>
-
-        
-
-
-
+      
         <Fade>
         <div className="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
           <FaSmile className="text-4xl text-yellow-500 mx-auto mb-4" />
@@ -55,7 +44,6 @@ const SharemealWork = () => {
         </div>
         </Fade>
 
-        
       </div>
       
     </div>

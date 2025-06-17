@@ -9,8 +9,6 @@ const Testimonials = () => {
 
 
     return (
-
-
         <div className="py-16 px-4 md:px-20 bg-gray-50">
       <Slide>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -57,7 +55,6 @@ const Testimonials = () => {
           </div>
         </div>
         </Zoom>
-
 
         <Zoom>
         <div className="bg-white p-6 rounded-lg shadow hover:shadow-xl transition relative">
