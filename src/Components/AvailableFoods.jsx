@@ -21,7 +21,6 @@ const AvailableFoods = () => {
 
   useEffect(() => {
     let sorted = [...foods];
-
   
     if (sortOption === 'expiry-asc') {
       sorted.sort((a, b) => new Date(a.expiredDateTime) - new Date(b.expiredDateTime));
@@ -29,7 +28,6 @@ const AvailableFoods = () => {
       sorted.sort((a, b) => new Date(b.expiredDateTime) - new Date(a.expiredDateTime));
     }
 
-  
     if (searchTerm) {
       sorted = sorted.filter(food =>
         food.foodName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -38,9 +36,6 @@ const AvailableFoods = () => {
 
     setSortedFoods(sorted);
   }, [foods, sortOption, searchTerm]);
-
-
-
 
   if (isLoading) {
     return (
