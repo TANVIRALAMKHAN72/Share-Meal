@@ -21,13 +21,9 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-  
     const hasUpperCase = /[A-Z]/.test(password);
     const hasLowerCase = /[a-z]/.test(password);
     const isValidLength = password.length >= 6;
-
-
-
 
     if (!hasUpperCase) {
       Swal.fire({
@@ -42,9 +38,6 @@ const Register = () => {
       return;
     }
 
-
-
-
     if (!hasLowerCase) {
       Swal.fire({
         icon: "error",
@@ -58,9 +51,6 @@ const Register = () => {
       return;
     }
 
-
-
-
     if (!isValidLength) {
       Swal.fire({
         icon: "error",
@@ -73,10 +63,6 @@ const Register = () => {
       });
       return;
     }
-
-
-
-
 
     createUser(email, password)
       .then((result) => {
@@ -92,10 +78,6 @@ const Register = () => {
           setUser({ ...currentUser });
         }
 
-
-
-
-      
         return fetch("https://share-meal-server-omega.vercel.app/users", {
           method: "POST",
           headers: {
@@ -143,8 +125,6 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-
-      
 
         return fetch("https://share-meal-server-omega.vercel.app/users", {
           method: "POST",
@@ -203,9 +183,6 @@ const Register = () => {
         });
       });
   };
-
-
-
 
 
   return (
@@ -310,8 +287,6 @@ const Register = () => {
               className="w-5 h-5"/>
             <span className="text-sm font-medium text-gray-700">Continue with Google</span>
           </button>
-
-
 
         </div>
       </div>
