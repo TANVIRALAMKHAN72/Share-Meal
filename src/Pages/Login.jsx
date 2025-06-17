@@ -48,7 +48,6 @@ const Login = () => {
       });
   };
 
-  
   const handleGoogleLogin = () => {
     googleSignIn()
       .then((result) => {
@@ -108,12 +107,10 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 flex items-center justify-center px-6 py-10">
       <div className="hero-content flex-col-reverse lg:flex-row items-center gap-12 max-w-6xl w-full">
-      
         <div className="w-full max-w-md rounded-xl shadow-lg p-6">
           <Lottie animationData={loginLottie} loop={true} />
         </div>
 
-      
         <div className="card w-full max-w-md bg-white rounded-xl shadow-2xl p-8">
           <h2 className="text-3xl font-extrabold text-center mb-6 text-indigo-700">
             Welcome Back
@@ -160,14 +157,12 @@ const Login = () => {
             </button>
           </form>
 
-        
           <div className="flex items-center gap-4 my-4">
             <div className="flex-grow h-px bg-gray-300"></div>
             <span className="text-gray-500 text-sm">OR</span>
             <div className="flex-grow h-px bg-gray-300"></div>
           </div>
 
-          
           <button
             onClick={handleGoogleLogin}
             className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-md py-2 hover:bg-gray-100 transition" >
@@ -176,8 +171,6 @@ const Login = () => {
               Continue with Google
             </span>
           </button>
-
-
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Don’t have an account?{" "}
