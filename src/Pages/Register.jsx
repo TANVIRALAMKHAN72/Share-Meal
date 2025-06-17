@@ -96,7 +96,7 @@ const Register = () => {
 
 
       
-        return fetch("http://localhost:3000/users", {
+        return fetch("https://share-meal-server-omega.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -146,7 +146,7 @@ const Register = () => {
 
       
 
-        return fetch("http://localhost:3000/users", {
+        return fetch("https://share-meal-server-omega.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -312,7 +312,7 @@ const Register = () => {
           </button>
 
 
-          
+
         </div>
       </div>
     </div>

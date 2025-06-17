@@ -38,7 +38,7 @@ const AddFood = () => {
       foodStatus: "available",
     };
 
-    fetch("http://localhost:3000/foods", {
+    fetch("https://share-meal-server-omega.vercel.app/foods", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -12,7 +12,7 @@ const FoodRequest = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/foods/${id}`)
+    fetch(`https://share-meal-server-omega.vercel.app/foods/${id}`)
       .then(res => res.json())
       .then(data => setFood(data));
   }, [id]);
@@ -38,7 +38,7 @@ const FoodRequest = () => {
   };
 
   try {
-    const res = await fetch('http://localhost:3000/food-requests', {
+    const res = await fetch('https://share-meal-server-omega.vercel.app/food-requests', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(requestData),

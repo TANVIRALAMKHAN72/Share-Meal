@@ -13,7 +13,7 @@ const AvailableFoods = () => {
   const { data: foods = [], isLoading } = useQuery({
     queryKey: ['availableFoods'],
     queryFn: async () => {
-      const res = await fetch('http://localhost:3000/foods');
+      const res = await fetch('https://share-meal-server-omega.vercel.app/foods');
       const data = await res.json();
       return data.filter(food => food.foodStatus === 'available');
     }

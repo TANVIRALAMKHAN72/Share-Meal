@@ -9,7 +9,7 @@ const FoodContainer = () => {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const res = await fetch("http://localhost:3000/foods");
+        const res = await fetch("https://share-meal-server-omega.vercel.app/foods");
         const data = await res.json();
         const availableFoods = data.filter(
           (food) => food.foodStatus === "available"

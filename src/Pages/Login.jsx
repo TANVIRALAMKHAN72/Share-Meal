@@ -54,7 +54,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
 
-        fetch("http://localhost:3000/users", {
+        fetch("https://share-meal-server-omega.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

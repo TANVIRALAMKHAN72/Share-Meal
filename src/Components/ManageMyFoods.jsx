@@ -19,7 +19,7 @@ const ManageMyFoods = () => {
 
   const fetchFoods = () => {
     setLoading(true);
-    fetch(`http://localhost:3000/foods?email=${user.email}`)
+    fetch(`https://share-meal-server-omega.vercel.app/foods?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setFoods(data);
@@ -57,7 +57,7 @@ const ManageMyFoods = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/foods/${id}`, {
+        fetch(`https://share-meal-server-omega.vercel.app/foods/${id}`, {
           method: "DELETE",
         })
           .then((res) => {
