@@ -34,7 +34,7 @@ const MyFoodRequests = () => {
         <h2 className="text-3xl font-semibold mb-6 text-center">My Requested Foods</h2>
       </Zoom>
       {requests.length === 0 ? (
-        <p className='text-center'>You have not requested any food yet.</p>
+        <p className='text-center my-10'>You have not requested any food yet.</p>
       ) : (
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
