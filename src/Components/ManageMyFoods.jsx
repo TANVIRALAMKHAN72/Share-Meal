@@ -16,7 +16,6 @@ const ManageMyFoods = () => {
   const [foods, setFoods] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
   const fetchFoods = () => {
     setLoading(true);
     fetch(`https://share-meal-server-omega.vercel.app/foods?email=${user.email}`)
@@ -35,12 +34,10 @@ const ManageMyFoods = () => {
     if (user?.email) fetchFoods();
   }, [user]);
 
-  
   const openModal = (id) => {
     navigate(`/manage-my-foods/${id}`);
   };
 
-  
   const closeModal = () => {
     navigate(`/manage-my-foods`);
     fetchFoods(); 
@@ -76,7 +73,6 @@ const ManageMyFoods = () => {
       <Zoom>
         <h1 className="text-3xl font-bold mb-6 text-center">Manage My Foods</h1>
       </Zoom>
-
       {loading ? (
         <div className="min-h-screen flex justify-center items-center">
     <span className="loading loading-spinner loading-lg text-primary"></span>
@@ -94,9 +90,7 @@ const ManageMyFoods = () => {
               <img
                 src={food.foodImage}
                 alt={food.foodName}
-                className="w-full h-48 object-cover rounded-md mb-4"
-              />
-
+                className="w-full h-48 object-cover rounded-md mb-4" />
               <h3 className="text-xl font-semibold mb-2">{food.foodName}</h3>
               <p>
                 <strong>Quantity:</strong> {food.foodQuantity}
@@ -111,7 +105,6 @@ const ManageMyFoods = () => {
               <p>
                 <strong>Donor:</strong> {food.donorName}
               </p>
-
               <div className="flex justify-between mt-4">
                 <button
                   onClick={() => openModal(food._id)}
