@@ -5,10 +5,6 @@ import { AuthContext } from '../Context/AuthContext';
 import Swal from 'sweetalert2';
 
 
-
-
-
-
 const Navbar = () => {
 const {user, signOutUser} = useContext(AuthContext);
 
@@ -38,7 +34,6 @@ const handleSignOut = () => {
         });
   })
 }
-
 
     return (
         <div className='dark:bg-gray-900'>
