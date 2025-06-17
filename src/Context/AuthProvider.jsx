@@ -64,7 +64,6 @@ googleSignIn,
     return <Loading />;
   }
 
-
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

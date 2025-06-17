@@ -4,15 +4,12 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Zoom } from 'react-awesome-reveal';
 import { motion } from "motion/react"
 
-
-
 const Banner = () => {
     return (
         <div className="relative w-full">
         
             <img className="w-full h-[80vh] object-cover" src={banner} alt="Banner" />
 
-        
             <div className="absolute inset-0 flex items-center justify-end text-white px-4 md:px-20 bg-opacity-40">
                 <div className="text-right max-w-xl">
                      <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-green-600 bg-clip-text text-transparent min-h-[4rem] md:min-h-[5rem] overflow-hidden" >
@@ -43,8 +40,6 @@ const Banner = () => {
                     </motion.p>
                   </Zoom>
 
-                
-                
                 </div>
             </div>
         </div>
