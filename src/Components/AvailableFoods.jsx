@@ -45,9 +45,6 @@ const AvailableFoods = () => {
     );
   }
 
-
-  
-
   return (
     <div className="my-12 mx-6">
       
@@ -68,7 +65,6 @@ const AvailableFoods = () => {
   
   <div className="flex-1 hidden lg:block"></div>
 
-  
   <div className="flex-1 flex justify-center">
     <div className="flex flex-col items-center">
       <label className="mb-2 font-semibold  text-center">Search by Food Name</label>
@@ -81,7 +77,6 @@ const AvailableFoods = () => {
     </div>
   </div>
 
-  
   <div className="flex-1 flex justify-end">
     <div className="flex flex-col items-end">
       <label className="mb-2 font-semibold ">Sort By Expiry Date</label>
@@ -96,8 +91,6 @@ const AvailableFoods = () => {
   </div>
 </div>
 
-
-      
       <div className={`grid grid-cols-1 md:grid-cols-2 ${isThreeCol ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-5`}>
         {sortedFoods.length > 0 ? (
           sortedFoods.map(food => (
