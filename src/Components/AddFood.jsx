@@ -94,7 +94,6 @@ const AddFood = () => {
 </div>
 
 
-
         <div>
           <label className="block mb-1 font-semibold">Food Name</label>
           <input
@@ -106,9 +105,6 @@ const AddFood = () => {
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400" />
         </div>
 
-     
-
-        
         <div>
           <label className="block mb-1 font-semibold">Food Quantity</label>
           <input
