@@ -9,7 +9,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ##  Live Website 
 
-[Share Meal Live Site](https://keen-squirrel-09c3de.netlify.app/)
+[Share Meal Live Site](https://astonishing-cobbler-9f2109.netlify.app/)
 
 ### Client (Frontend)
 - React.js
