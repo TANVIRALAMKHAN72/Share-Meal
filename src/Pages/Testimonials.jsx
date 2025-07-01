@@ -9,7 +9,7 @@ const Testimonials = () => {
 
 
     return (
-        <div className="py-16 px-4 md:px-20 bg-gray-50">
+        <div className="py-16 px-4 md:px-20">
       <Slide>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         What People Say
@@ -19,9 +19,9 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     
        <Zoom>
-         <div className="bg-white p-6 rounded-lg shadow hover:shadow-xl transition relative">
+         <div className="bg-base-200 p-6 rounded-lg shadow hover:shadow-xl transition relative">
           <FaQuoteLeft className="text-3xl text-emerald-400 absolute top-4 left-4 opacity-20" />
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-500 mb-4">
             ShareMeal helped my family during a tough time. I’m forever grateful!
           </p>
           <div className="flex items-center gap-4 mt-6">
@@ -38,9 +38,9 @@ const Testimonials = () => {
 
        </Zoom>
        <Zoom>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-xl transition relative">
+        <div className="bg-base-200 p-6 rounded-lg shadow hover:shadow-xl transition relative">
           <FaQuoteLeft className="text-3xl text-emerald-400 absolute top-4 left-4 opacity-20" />
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-500 mb-4">
             Volunteering with ShareMeal gave my life a new purpose. It’s heart-touching work!
           </p>
           <div className="flex items-center gap-4 mt-6">
@@ -57,9 +57,9 @@ const Testimonials = () => {
         </Zoom>
 
         <Zoom>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-xl transition relative">
+        <div className="bg-base-200 p-6 rounded-lg shadow hover:shadow-xl transition relative">
           <FaQuoteLeft className="text-3xl text-emerald-400 absolute top-4 left-4 opacity-20" />
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-500 mb-4">
             We regularly donate extra meals. It’s amazing to see it reach those in need.
           </p>
           <div className="flex items-center gap-4 mt-6">

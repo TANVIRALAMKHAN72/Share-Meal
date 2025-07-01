@@ -29,7 +29,7 @@ const MyFoodRequests = () => {
   </div>;
 
   return (
-    <div className=" mx-auto p-6 my-10">
+    <div className=" mx-auto p-6 my-20">
       <Zoom>
         <h2 className="text-3xl font-semibold mb-6 text-center">My Requested Foods</h2>
       </Zoom>

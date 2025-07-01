@@ -34,7 +34,7 @@ const FoodContainer = () => {
   }
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 mx-10">
       <Slide>
         <h1 className="text-4xl font-semibold text-center my-10">
           Recommended for You
@@ -52,15 +52,15 @@ const FoodContainer = () => {
               className="w-full h-48 object-cover"/>
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{food.foodName}</h2>
-              <p className="text-sm text-gray-600 mb-1">
+              <p className=" text-gray-500 mb-1">
                 Quantity:{" "}
                 <span className="font-medium">{food.foodQuantity}</span>
               </p>
-              <p className="text-sm text-gray-600 mb-1">
+              <p className=" text-gray-500 mb-1">
                 Location:{" "}
                 <span className="font-medium">{food.pickupLocation}</span>
               </p>
-              <p className="text-sm text-gray-600">
+              <p className=" text-gray-500">
                 Expiry:{" "}
                 <span className="font-medium">
                   {new Date(food.expiredDateTime).toLocaleDateString()}
