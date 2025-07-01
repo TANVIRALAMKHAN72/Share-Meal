@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP } from 'react-icons/fa';
-import logo from '../assets/food-sharing-sticker-emblem-feeding-people-giving-food-poor-refugees-food-sharing-sticker-emblem-feeding-people-giving-153612354.webp';
+import logo from '../assets/logo10.webp';
 
 
 const Footer = () => {

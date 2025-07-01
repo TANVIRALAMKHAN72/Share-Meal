@@ -105,13 +105,13 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 flex items-center justify-center px-6 py-10">
+    <div className="min-h-screen  flex items-center justify-center px-6 py-10">
       <div className="hero-content flex-col-reverse lg:flex-row items-center gap-12 max-w-6xl w-full">
         <div className="w-full max-w-md rounded-xl shadow-lg p-6">
           <Lottie animationData={loginLottie} loop={true} />
         </div>
 
-        <div className="card w-full max-w-md bg-white rounded-xl shadow-2xl p-8">
+        <div className="card w-full max-w-md bg-base-200 rounded-xl shadow-2xl p-8">
           <h2 className="text-3xl font-extrabold text-center mb-6 text-indigo-700">
             Welcome Back
           </h2>
@@ -167,7 +167,7 @@ const Login = () => {
             onClick={handleGoogleLogin}
             className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-md py-2 hover:bg-gray-100 transition" >
             <FcGoogle className="text-xl" />
-            <span className="text-sm font-medium text-gray-700">
+            <span className="text-sm font-medium text-gray-600">
               Continue with Google
             </span>
           </button>

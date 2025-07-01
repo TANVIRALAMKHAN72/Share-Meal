@@ -13,6 +13,7 @@ import MyFoodRequest from "../Components/MyFoodRequest";
 import PrivateRouters from "../Routers/PrivateRouters";
 import FoodDetails from "../Pages/FoodDetails";
 import FoodRequest from "../Pages/FoodRequest";
+import BlogPage from "../Components/BlogPage";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
         {
             path: '/request-food/:id',
             element: <FoodRequest></FoodRequest>,
+        },
+        {
+            path: '/blog',
+            element: <BlogPage></BlogPage>,
         },
     ]
   },

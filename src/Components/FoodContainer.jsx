@@ -45,7 +45,7 @@ const FoodContainer = () => {
         {foods.map((food) => (
           <div
             key={food._id}
-            className="bg-base-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition duration-300" >
+            className="bg-base-100 shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition duration-300" >
             <img
               src={food.foodImage}
               alt={food.foodName}

@@ -38,7 +38,7 @@ const MyFoodRequests = () => {
       ) : (
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="bg-gray-200">
+            <tr className="bg-base-200">
               <th className="border border-gray-300 px-4 py-2">Donor Name</th>
               <th className="border border-gray-300 px-4 py-2">Pickup Location</th>
               <th className="border border-gray-300 px-4 py-2">Expire Date</th>

@@ -186,13 +186,13 @@ const Register = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-purple-100 via-pink-100 to-yellow-100 flex items-center justify-center px-6 py-10">
+    <div className="min-h-screen flex items-center justify-center px-6 py-10">
       <div className="hero-content flex-col-reverse lg:flex-row items-center gap-12 max-w-6xl w-full">
         <div className="w-full max-w-md rounded-xl shadow-lg p-6">
           <Lottie animationData={registerLottie} loop={true} />
         </div>
 
-        <div className="card w-full max-w-md bg-white rounded-xl shadow-2xl p-8">
+        <div className="card w-full max-w-md bg-base-200 rounded-xl shadow-2xl p-8">
           <h2 className="text-3xl font-extrabold text-center mb-6 text-purple-700">
             Create an Account
           </h2>
@@ -285,7 +285,7 @@ const Register = () => {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
               alt="Google"
               className="w-5 h-5"/>
-            <span className="text-sm font-medium text-gray-700">Continue with Google</span>
+            <span className="text-sm font-medium text-gray-600">Continue with Google</span>
           </button>
 
         </div>

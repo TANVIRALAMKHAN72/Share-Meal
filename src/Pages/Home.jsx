@@ -4,6 +4,8 @@ import SharemealWork from './SharemealWork';
 import SharemealBenifit from './SharemealBenifit';
 import Testimonials from './Testimonials';
 import FoodContainer from '../Components/FoodContainer';
+import JoinMovementSection from '../Components/JoinMovementSection';
+
 
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
         <FoodContainer></FoodContainer>
         <SharemealBenifit></SharemealBenifit>
         <Testimonials></Testimonials>
+        <JoinMovementSection></JoinMovementSection>
+        
      </div>
     );
 };
