@@ -10,11 +10,11 @@ const AvailableFoods = () => {
   const [sortedFoods, setSortedFoods] = useState([]);
   const [isThreeCol, setIsThreeCol] = useState(true);
 
-  // React Query দিয়ে API থেকে ডাটা ফেচ করছো
+
   const { data: foods = [], isLoading, isError } = useQuery({
     queryKey: ['availableFoods'],
     queryFn: async () => {
-      const res = await fetch('https://share-meal-server-omega.vercel.app/foods');
+      const res = await fetch('https://staynest-server.vercel.app/foods');
       if (!res.ok) {
         throw new Error('Failed to fetch foods');
       }
@@ -23,7 +23,7 @@ const AvailableFoods = () => {
     }
   });
 
-  // ডাটা আসার পরে sorting এবং filtering করবে, এবং একই ডাটা হলে setState এড়াবে
+  
   useEffect(() => {
     let sorted = [...foods];
 
@@ -40,9 +40,9 @@ const AvailableFoods = () => {
     }
 
     setSortedFoods(prev => {
-      // পুরানো এবং নতুন sorted লিস্ট Json স্ট্রিংয়ে কনভার্ট করে তুলনা করবো
+      
       const isSame = JSON.stringify(prev) === JSON.stringify(sorted);
-      if (isSame) return prev; // যদি একই হয় তাহলে স্টেট আপডেট করো না
+      if (isSame) return prev; 
       return sorted;
     });
 

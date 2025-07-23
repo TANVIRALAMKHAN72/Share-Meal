@@ -78,7 +78,7 @@ const Register = () => {
           setUser({ ...currentUser });
         }
 
-        return fetch("https://share-meal-server-omega.vercel.app/users", {
+        return fetch("https://staynest-server.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -126,7 +126,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
 
-        return fetch("https://share-meal-server-omega.vercel.app/users", {
+        return fetch("https://staynest-server.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

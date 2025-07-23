@@ -8,7 +8,7 @@ const FoodDetails = () => {
   const [food, setFood] = useState(null);
 
   useEffect(() => {
-    fetch(`https://share-meal-server-omega.vercel.app/foods/${id}`)
+    fetch(`https://staynest-server.vercel.app/foods/${id}`)
       .then(res => res.json())
       .then(data => setFood(data));
   }, [id]);

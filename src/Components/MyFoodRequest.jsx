@@ -10,7 +10,7 @@ const MyFoodRequests = () => {
   useEffect(() => {
     if (user?.email) {
       console.log('token in the context',user.accessToken)
-      fetch(`https://share-meal-server-omega.vercel.app/food-requests?userEmail=${user.email}`,{
+      fetch(`https://staynest-server.vercel.app/food-requests?userEmail=${user.email}`,{
         headers : {
           authorization : `Bearer ${user.accessToken}`
         }
