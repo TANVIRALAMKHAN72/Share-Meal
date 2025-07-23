@@ -15,6 +15,7 @@ const AvailableFoods = () => {
     queryKey: ['availableFoods'],
     queryFn: async () => {
       const res = await fetch('https://share-meal-server-tau.vercel.app/foods');
+      console.log(res)
       if (!res.ok) {
         throw new Error('Failed to fetch foods');
       }
