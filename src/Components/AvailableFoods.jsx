@@ -14,7 +14,7 @@ const AvailableFoods = () => {
   const { data: foods = [], isLoading, isError } = useQuery({
     queryKey: ['availableFoods'],
     queryFn: async () => {
-      const res = await fetch('https://staynest-server.vercel.app/foods');
+      const res = await fetch('https://share-meal-server-tau.vercel.app/foods');
       if (!res.ok) {
         throw new Error('Failed to fetch foods');
       }

@@ -16,7 +16,7 @@ const UpdateFood = ({ id, isOpen, onClose }) => {
 
     setLoading(true);
 
-    fetch(`https://staynest-server.vercel.app/foods/${id}`)
+    fetch(`/foods/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch food data");
         return res.json();
@@ -53,7 +53,7 @@ const UpdateFood = ({ id, isOpen, onClose }) => {
       additionalNotes,
     };
 
-    fetch(`https://staynest-server.vercel.app/foods/${id}`, {
+    fetch(`https://share-meal-server-tau.vercel.app/foods/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

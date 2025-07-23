@@ -38,7 +38,7 @@ const AddFood = () => {
       foodStatus: "available",
     };
 
-    fetch("https://staynest-server.vercel.app/foods", {
+    fetch("https://share-meal-server-tau.vercel.app/foods", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

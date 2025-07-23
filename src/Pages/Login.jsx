@@ -53,7 +53,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
 
-        fetch("https://staynest-server.vercel.app/users", {
+        fetch("https://share-meal-server-tau.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

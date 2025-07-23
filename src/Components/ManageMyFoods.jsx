@@ -18,7 +18,7 @@ const ManageMyFoods = () => {
 
   const fetchFoods = () => {
     setLoading(true);
-    fetch(`https://staynest-server.vercel.app/foods?email=${user.email}`)
+    fetch(`https://share-meal-server-tau.vercel.app/foods?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setFoods(data);
@@ -54,7 +54,7 @@ const ManageMyFoods = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://staynest-server.vercel.app/foods/${id}`, {
+        fetch(`https://share-meal-server-tau.vercel.app/foods/${id}`, {
           method: "DELETE",
         })
           .then((res) => {
