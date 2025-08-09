@@ -31,4 +31,5 @@ const AvailableFoodCard = ({ food }) => {
   );
 };
 
+
 export default AvailableFoodCard;

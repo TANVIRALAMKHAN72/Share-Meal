@@ -33,7 +33,7 @@ const FoodDetails = () => {
       <p><strong>Additional Info:</strong> {food.additionalNotes || 'N/A'}</p>
       <div className="mt-4 text-right">
         <button
-        
+
           className="btn btn-primary btn-sm">
            <Link to={`/request-food/${id}`}>Request</Link>
         </button>
