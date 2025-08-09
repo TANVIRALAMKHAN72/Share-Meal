@@ -6,7 +6,6 @@ import logo from '../assets/logo10.webp';
 const Footer = () => {
   return (
     <footer className="bg-[#111111] text-white pt-10 px-4 sm:px-6 md:px-12 lg:px-20">
-     
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
         <div className="text-left">
           <div className="flex items-center gap-3 mb-2">
@@ -54,5 +53,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
