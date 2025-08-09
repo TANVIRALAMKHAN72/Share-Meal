@@ -3,8 +3,6 @@ import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 
-
-
 const Testimonials = () => {
 
 
@@ -17,7 +15,6 @@ const Testimonials = () => {
       </Slide>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    
        <Zoom>
          <div className="bg-base-200 p-6 rounded-lg shadow hover:shadow-xl transition relative">
           <FaQuoteLeft className="text-3xl text-emerald-400 absolute top-4 left-4 opacity-20" />
