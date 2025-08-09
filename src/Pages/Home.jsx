@@ -7,7 +7,6 @@ import FoodContainer from '../Components/FoodContainer';
 import JoinMovementSection from '../Components/JoinMovementSection';
 
 
-
 const Home = () => {
     return (
      <div>
